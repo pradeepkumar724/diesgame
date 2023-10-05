@@ -1,6 +1,8 @@
-import Dies from "../assests/dices.jpg";
+import Dies from "../assets/dices.jpg";
 
 const Homepage = (props) => {
+  // const [selectedNumbers, setSelectedNumbers] = useState();
+
   return (
     <div className="flex flex-row justify-center items-center h-screen  container">
       <div className="hidden md:block">
