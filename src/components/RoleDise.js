@@ -4,16 +4,16 @@ const RoleDise = ({ currentDies, roleDise }) => {
   return (
     <div>
       <div
-        className="flex items-center flex-col w-full mt-20 cursor-pointer"
+        className="cursor-none flex items-center flex-col w-full mt-20 md:cursor-pointer"
         onClick={roleDise}
       >
         <img
           src={`/images/dice_${currentDies}.jpg`}
           alt={`dics ${currentDies}`}
-          className="w-58"
+          className="w-36 mt-6 md:w-58"
         />
 
-        <p className="font-bold text-lg">Click on Dice to roll</p>
+        <p className="font-bold text-md md:text-lg">Click on Dice to roll</p>
       </div>
     </div>
   );

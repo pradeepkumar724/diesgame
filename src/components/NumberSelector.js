@@ -18,13 +18,15 @@ const NumberSelector = ({
 
   return (
     <div className="flex items-end flex-col">
-      <p className="text-red-500 font-semibold text-md pb-1">{error}</p>
+      <p className="text-red-500 font-semibold text-sm md:text-md pb-1 self-center">
+        {error}
+      </p>
       <div className="flex justify-center items-center">
         {numberarray.map((value, i) => (
           <div
             className={` ${
               value === selectedNumbers ? "bg-black text-white" : "bg-white"
-            } font-bold h-10 w-10 border-black border-2 m-1 place-items-center grid`}
+            } font-bold h-8 w-8 md:h-10 md:w-10 border-black border-2 m-1 place-items-center grid`}
             key={i}
             onClick={() => numberSelectorHandler(value)}
           >
@@ -32,7 +34,9 @@ const NumberSelector = ({
           </div>
         ))}
       </div>
-      <p className="font-bold text-xl text-right  d">Selected Numbers</p>
+      <p className="font-bold text-sm md:text-xl text-right ">
+        Selected Numbers
+      </p>
     </div>
   );
 };

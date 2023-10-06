@@ -45,7 +45,7 @@ const PlayGame = () => {
 
   return (
     <div>
-      <div className="flex justify-between items-center container mx-auto pt-12">
+      <div className="flex justify-between flex-col items-center container mx-auto md:flex-row  pt-12 h-32">
         <TotalScore score={score} />
         <NumberSelector
           error={error}
