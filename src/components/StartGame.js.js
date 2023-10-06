@@ -12,7 +12,7 @@ const Homepage = (props) => {
           className="w-[500px]"
         />
       </div>
-      <div>
+      <div className="flex justify-center items-center flex-col">
         <h1 className="text-3xl font-bold md:text-8xl md:font-bold">
           Dies Game
         </h1>
